@@ -3,6 +3,7 @@
     font-family: 'Manrope-Varible';
     src: url(./font/Manrope/Manrope-VariableFont_wght.ttf);
 }
+
 /*COLORES DE PROYECTO*/
 :root{
     --color-share: hsl(217, 19%, 35%);
@@ -11,58 +12,134 @@
     --color-boton-share: hsl(214, 17%, 51%);
     --background-body: hsl(212, 23%, 69%);
 }
+
 *{
     margin: 0px;
     padding: 0px;
 }
+
 body{
     background-color: var(--color-text-date);
 }
+
 .container{
-    width: 690px;
-    height: 233px;
+    width: 695px;
+    height: 242px;
     display: flex;
     margin: 0px auto;
-    justify-content: center;
-    align-items: flex-start;
-    border: 5px solid #000;
+    margin-top: 250px;
     background-color: var(--background-card);
 }
+
 .img_card .img__mueble{
-    width: 267px;
-    height: 226px;
-    border: 5px solid #000;
+    width: 269px;
+    height: 246px;
 }
+
 .card_conte .text{
     display: flex;
     width: 300px;
     padding: 15px;
     font-size: 17px;
     margin-left: 20px;
+    font-weight: bold;
+    color: var(--color-share);
     font-family: 'Manrope-Varible';
 }
+
 .card_conte .text-2{
     width: 371px;
     padding: 20px;
-    margin-left: 10px;
-    border: 5px solid #000;
+    font-size: 13px;
+    margin-left: 15px;
+    margin-top: -21px;
+    color: var(--color-boton-share);
+    font-family: 'Manrope-Varible';
 }
+
 .card_conte .foto{
-    display: flex;
     width: 40px;
-    border-radius: 50%;
-}
-.card_conte .name{
     display: flex;
-    margin-top: -30px;
-    margin-left: 40px;
+    margin-top: 4px;
+    margin-left: 27px;
+    border-radius: 50px;
+}
+
+.card_conte .name{
+    font-size: 13px;
+    margin-top: -36px;
+    margin-left: 80px;
+    font-weight: bold;
+    color: var(--color-share);
+    font-family: 'Manrope-Varible';
 }
 .card_conte .data{
     display: flex;
-    margin-left: 40px;
+    font-size: 11px;
+    margin-left: 80px;
+    color: var(--color-boton-share);
+    font-family: 'Manrope-Varible';
 }
+
 .card_conte .btn{
     display: flex;
+    border: none;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
     margin-top: -30px;
-    margin-left: 380px;
+    margin-left: 360px;
+    border-radius: 50px;
+    background: hsla(214, 17%, 51%, 0.1);
+}
+
+.card_conte .btn_icon{
+    margin: 0px auto;
+    margin-top: 5px;
+}
+
+/*ACTIVACION DEL BOTON*/
+.icons{
+    display: none;
+}
+.share{
+    gap: 3px;
+    padding: 8px;
+    width: 163px;
+    height: 30px;
+    display: flex;
+    margin-top: 115px;
+    margin-left: -115px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-share);
+}
+
+.share .share-2{
+    display: flex;
+    font-size: 8px;
+    font-size: 12px;
+    margin-left: 30px;
+    color: var(--color-text-date);
+    font-family: 'Manrope-Varible';
+}
+
+.share .facebook{
+    width: 15px;
+    display: flex;
+    margin-left: 15px;
+}
+
+.share .twitteer{
+    width: 15px;
+    display: flex;
+    margin-left: 15px;
+}
+
+.share .pinterest{
+    width: 15px;
+    display: flex;
+    margin-left: 15px;
+    margin-right: 30px;
 }
